@@ -1,0 +1,146 @@
+
+:root {
+    --color-kazuma: #5A5A2F;      
+    --color-megumin: #B5333E;    
+    --color-aqua: #5AC8FA;         
+    --color-darkness: #C7B28E;   
+    --color-bg: #F2EAD3;          
+    --color-text: #3B2F2F;        
+    --color-accent: #F4A261;      
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    background: linear-gradient(45deg, var(--color-aqua), var(--color-megumin));
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.navbar .btn-outline-light {
+    border-color: var(--color-bg);
+    color: var(--color-bg);
+    font-weight: 700;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+
+.card {
+    border: 3px solid var(--color-aqua);
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 700;
+    color: var(--color-megumin);
+    text-shadow: 1px 1px 2px var(--color-kazuma);
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--color-text);
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.btn-primary {
+    background-color: var(--color-kazuma);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #788859;
+}
+
+.btn-success {
+    background-color: var(--color-megumin);
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #a22a31;
+}
+
+.btn-warning {
+    background-color: var(--color-aqua);
+    border: none;
+    color: #3b3b3b;
+}
+
+.btn-warning:hover {
+    background-color: #3ca0e0;
+    color: #fff;
+}
+
+
+.modal-content {
+    border-radius: 15px;
+    border: 2px solid var(--color-aqua);
+    background-color: #fff9f0;
+}
+
+.modal-header {
+    background: linear-gradient(90deg, var(--color-kazuma), var(--color-megumin));
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1);
+}
+
+
+form label {
+    font-weight: 600;
+    color: var(--color-kazuma);
+}
+
+form input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 8px var(--color-accent);
+}
+
+.invalid-feedback {
+    font-style: italic;
+}
+
+
+#loginMessage {
+    font-weight: 700;
+    color: var(--color-megumin);
+    text-align: center;
+}
+
+
+
